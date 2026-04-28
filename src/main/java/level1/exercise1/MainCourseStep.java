@@ -8,5 +8,6 @@ public interface MainCourseStep {
     FinalStep withDessert(String dessert);
     FinalStep withCoffee(String coffee);
     FinalStep withDrink(String drink);
+
     Menu build();
 }
