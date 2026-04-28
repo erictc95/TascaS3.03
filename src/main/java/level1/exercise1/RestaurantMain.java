@@ -6,7 +6,7 @@ public class RestaurantMain {
                 .withIncoming("Amanida Mediterranea")
                 .isVegan()
                 .isGlutenFree()
-                .withMainCourse("Filet de Vadella")
+                .withMainCourse("Filet de Vedella")
                 .withSupplement("Guarnicio Extra")
                 .withDessert("Mousse de Xocolata")
                 .withDrink("Vi Negre")
@@ -23,7 +23,7 @@ public class RestaurantMain {
         System.out.println(kidsMenu);
 
         Menu halfMenu = new MenuBuilder()
-                .withMainCourse("Rissoto de Bolets")
+                .withMainCourse("Risotto de Bolets")
                 .isVegan()
                 .withCoffee("Espresso")
                 .withDrink("Aigua")

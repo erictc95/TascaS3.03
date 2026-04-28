@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MenuRestaurantTest {
+public class MenuBuilderTest {
 
     @Test
     void shouldBuildExecutiveMenuCorrectly() {
@@ -12,7 +12,7 @@ public class MenuRestaurantTest {
                 .withIncoming("Amanida Mediterranea")
                 .isVegan()
                 .isGlutenFree()
-                .withMainCourse("Filet de Vadella")
+                .withMainCourse("Filet de Vedella")
                 .withSupplement("Guarnicio Extra")
                 .withDessert("Mousse de Xocolata")
                 .withDrink("Vi Negre")
@@ -53,7 +53,7 @@ public class MenuRestaurantTest {
     void shouldBuildHalfMenuCorrectly() {
 
         Menu halfMenu = new MenuBuilder()
-                .withMainCourse("Rissoto de Bolets")
+                .withMainCourse("Risotto de Bolets")
                 .isVegan()
                 .withCoffee("Espresso")
                 .withDrink("Aigua")
@@ -63,6 +63,8 @@ public class MenuRestaurantTest {
 
         assertEquals("Rissoto de Bolets", halfMenu.getMainCourse().getName());
         assertTrue(halfMenu.getMainCourse().isVegan());
+
+        assertNull(halfMenu.getMainCourse().getSupplement());
 
         assertEquals("Espresso", halfMenu.getCoffee());
         assertEquals("Aigua", halfMenu.getDrink());
