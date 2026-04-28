@@ -7,8 +7,8 @@ public class RestaurantMain {
                 .isVegan()
                 .isGlutenFree()
                 .withMainCourse("Filet de Vadella")
-                .withSupplement("Guarnicio extra")
-                .withDessert("Mouse de Xocolata")
+                .withSupplement("Guarnicio Extra")
+                .withDessert("Mousse de Xocolata")
                 .withDrink("Vi Negre")
                 .build();
 
@@ -23,7 +23,7 @@ public class RestaurantMain {
         System.out.println(kidsMenu);
 
         Menu halfMenu = new MenuBuilder()
-                .withMainCourse("Rissoto de bolets")
+                .withMainCourse("Rissoto de Bolets")
                 .isVegan()
                 .withCoffee("Espresso")
                 .withDrink("Aigua")
