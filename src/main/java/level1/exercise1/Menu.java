@@ -50,12 +50,28 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "incoming=" + incoming +
-                ", mainCourse=" + mainCourse +
-                ", dessert='" + dessert + '\'' +
-                ", coffee='" + coffee + '\'' +
-                ", drink='" + drink + '\'' +
-                '}';
+        String result = "Menu:\n";
+
+        if (incoming != null) {
+            result += " - Incoming: " + incoming + "\n";
+        }
+
+        if (mainCourse != null) {
+            result += " - Main Course: " + mainCourse + "\n";
+        }
+
+        if (dessert != null) {
+            result += " - Dessert: " + dessert + "\n";
+        }
+
+        if (coffee != null) {
+            result += " - Coffee: " + coffee + "\n";
+        }
+
+        if (drink != null) {
+            result += " - Drink: " + drink + "\n";
+        }
+
+        return result;
     }
 }

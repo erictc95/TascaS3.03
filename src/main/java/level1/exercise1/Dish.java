@@ -45,11 +45,20 @@ public class Dish {
 
     @Override
     public String toString() {
-        return "Dish{" +
-                "name='" + name + '\'' +
-                ", vegan=" + vegan +
-                ", glutenFree=" + glutenFree +
-                ", supplement='" + supplement + '\'' +
-                '}';
+        String result = name;
+
+        if (vegan) {
+            result += " (Vegan)";
+        }
+
+        if (glutenFree) {
+            result += " (Gluten Free)";
+        }
+
+        if (supplement != null) {
+            result += ", Supplement: " + supplement;
+        }
+
+        return result;
     }
 }
