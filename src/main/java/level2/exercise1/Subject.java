@@ -4,5 +4,5 @@ public interface Subject {
 
     void addObserver(Observer observer);
     void removeObserver(Observer observer);
-    void notifyObserver(String message);
+    void notifyObservers(String message);
 }

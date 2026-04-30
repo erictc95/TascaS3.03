@@ -5,12 +5,12 @@ public class StockBrokerAgency implements Observer{
     private String agencyName;
 
 
-    private StockBrokerAgency(String agencyName) {
+    public StockBrokerAgency(String agencyName) {
         this.agencyName = agencyName;
     }
 
     @Override
     public void update(String message) {
-        System.out.println(agencyName + "recieved notification " + message);
+        System.out.println(agencyName + " received notification: " + message);
     }
 }

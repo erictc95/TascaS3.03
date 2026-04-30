@@ -7,18 +7,18 @@ public class StockAgent implements Subject {
 
     private List<Observer> observers;
 
-    public StockAgent(List<Observer> observers) {
-        this.observers = new ArrayList<>(observers);
+    public StockAgent() {
+        observers = new ArrayList<>();
     }
 
     public void stockMarketUp(double value) {
         String message = "Stock market went UP to " + value;
-        notifyObserver(message);
+        notifyObservers(message);
     }
 
     public void stockMarketDown(double value) {
         String message = "Stock market went DOWN to " + value;
-        notifyObserver(message);
+        notifyObservers(message);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class StockAgent implements Subject {
     }
 
     @Override
-    public void notifyObserver(String message) {
+    public void notifyObservers(String message) {
         observers.forEach(observer -> observer.update(message));
     }
 }
