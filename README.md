@@ -164,4 +164,4 @@ Low coupling and extensibility
 Unit testing coverage
 👨‍💻 Author
 
-## Developed by Eric Tarrés Cabrisas
+Developed by Eric Tarrés Cabrisas
