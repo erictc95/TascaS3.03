@@ -149,19 +149,18 @@ mvn test
 Compile the project
 mvn clean install
 Run the application
-mvn spring-boot:run
 
 Only if the project includes Spring Boot.
 
 🎯 Learning Objectives Achieved
 Application of SOLID principles
 Correct implementation of creational, behavioral, and structural patterns
-Fluent API design
 Progressive interface implementation
 Dynamic object composition
 Runtime behavior management
 Low coupling and extensibility
 Unit testing coverage
+
 👨‍💻 Author
 
-Developed by Eric Tarrés Cabrisas
+## Developed by Eric Tarrés Cabrisas
